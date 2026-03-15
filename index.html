@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal B S · Embedded Systems & Freelancer</title>
+    <meta name="description"
+        content="Portfolio of Prajwal B S — Embedded Software Developer & Freelancer specializing in ESP32, PIC, AVR microcontrollers and PCB design.">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Embedded<span>Systems</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#blogs" class="nav-link">Blogs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link admin-login-btn" id="adminLoginBtn">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Prajwal B S</span></h1>
+            <p class="hero-subtitle"><span class="typing-text" id="typingText"></span></p>
+            <p class="hero-description">
+                With over <strong>1+ year of experience</strong> in embedded systems development, I have worked with a
+                wide range of microcontrollers including the ESP32 family (Xtensa architecture), ATmega328P (AVR
+                architecture), and PIC microcontrollers (Microchip family). I am experienced with multiple development
+                environments such as Arduino IDE, Visual Studio, MPLAB IDE, and the Espressif framework using both
+                Arduino and ESP-IDF. I also have practical experience in <strong>PCB design</strong> and
+                hardware–software integration.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-code-branch"></i> View My Work</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="microchip-container">
+                <img src="microchip.png" alt="Microchip - Embedded Systems" class="microchip-img">
+                <div class="circuit-glow"></div>
+            </div>
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle reveal">Here are some of my recent works — click any card to see the full details
+            </p>
+            <div class="projects-grid" id="projectsContainer"></div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title reveal">Technical <span class="highlight">Skills</span></h2>
+            <p class="section-subtitle reveal">Technologies and tools I use to bring ideas to life</p>
+            <div class="skills-grid" id="skillsContainer">
+                <!-- Embedded & Microcontrollers -->
+                <div class="skill-card reveal-card">
+                    <div class="skill-category-title"><i class="fas fa-microchip"></i> Microcontrollers</div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">ESP32 / ESP-IDF(Xtensa)</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">ATmega328P (AVR)</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PIC Microcontrollers(Microchip)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programming & Tools -->
+                <div class="skill-card reveal-card">
+                    <div class="skill-category-title"><i class="fas fa-code"></i> Programming & Tools</div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Embedded C / C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Arduino IDE</span>
+                        </div>
+
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">FreeRTOS</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Computer Architecture</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hardware Design -->
+                <div class="skill-card reveal-card">
+                    <div class="skill-category-title"><i class="fas fa-drafting-compass"></i> Hardware & Design</div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PCB Design (EASY EDA)</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Wireless Protocols (Wi-Fi,Bluetooth,MQTT,TCP-IP)</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Communication Protocols (UART,SPI,I2C,CAN)</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Circuit Debugging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOGS SECTION -->
+    <section id="blogs" class="section blogs-section">
+        <div class="container">
+            <h2 class="section-title reveal">Latest <span class="highlight">Blogs</span></h2>
+            <p class="section-subtitle reveal">Thoughts, tutorials and insights from my embedded journey</p>
+            <div class="blogs-grid" id="blogsContainer"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle reveal">Let's collaborate on something amazing!</p>
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p id="contactEmail">binary.developer01@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p id="contactPhone">+91 7406368709</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p id="contactLocation">Bengaluru, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/prajubs/QTT" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dev"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                        <input type="email" id="contactUserEmail" name="email" placeholder="Your Email" required>
+                        <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send
+                            Message</button>
+                        <p class="contact-form-note"><i class="fas fa-info-circle"></i> Your message will be sent directly to my email & WhatsApp.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Prajwal B S · Embedded Systems Freelancer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-lock"></i> Admin Login</h2>
+            <form id="loginForm">
+                <input type="password" id="secretKey" placeholder="Enter Secret Key" required>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD MODAL -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content admin-dashboard">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-tachometer-alt"></i> Admin Dashboard</h2>
+
+            <!-- STATS CARDS -->
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="stat-number" id="projectsCount">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-blog"></i>
+                    <div class="stat-number" id="blogsCount">0</div>
+                    <div class="stat-label">Blogs</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-database"></i>
+                    <div class="stat-number" id="storageUsed">0 KB</div>
+                    <div class="stat-label">Storage</div>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="projects-tab"><i class="fas fa-code"></i> Projects</button>
+                <button class="tab-btn" data-tab="blogs-tab"><i class="fas fa-feather"></i> Blogs</button>
+                <button class="tab-btn" data-tab="settings-tab"><i class="fas fa-sliders-h"></i> Settings</button>
+            </div>
+
+            <!-- PROJECTS TAB -->
+            <div class="tab-content active" id="projects-tab">
+                <div class="admin-form-container">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Project</h3>
+                    <form id="addProjectForm">
+                        <input type="text" id="projTitle" placeholder="Project Title *" required>
+                        <input type="url" id="projImage" placeholder="Image URL *">
+                        <textarea id="projDesc" placeholder="Project Description *" rows="2" required></textarea>
+                        <input type="text" id="projTech" placeholder="Technologies (comma separated) *" required>
+                        <input type="url" id="projUrl" placeholder="Project URL *">
+                        <button type="submit"><i class="fas fa-plus"></i> Add Project</button>
+                    </form>
+                </div>
+                <div class="admin-items-container">
+                    <h3><i class="fas fa-list-ul"></i> Manage Projects</h3>
+                    <div class="admin-items-list" id="adminProjectsList"></div>
+                </div>
+            </div>
+
+            <!-- BLOGS TAB -->
+            <div class="tab-content" id="blogs-tab">
+                <div class="admin-form-container">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Blog</h3>
+                    <form id="addBlogForm">
+                        <input type="text" id="blogTitle" placeholder="Blog Title *" required>
+                        <input type="url" id="blogImage" placeholder="Blog Image URL *" required>
+                        <textarea id="blogExcerpt" placeholder="Blog Excerpt *" rows="2" required></textarea>
+                        <textarea id="blogContent" placeholder="Blog Content *" rows="3" required></textarea>
+                        <input type="text" id="blogReadTime" placeholder="Read Time (e.g. 5 min read) *" required>
+                        <button type="submit"><i class="fas fa-plus"></i> Add Blog</button>
+                    </form>
+                </div>
+                <div class="admin-items-container">
+                    <h3><i class="fas fa-list-ul"></i> Manage Blogs</h3>
+                    <div class="admin-items-list" id="adminBlogsList"></div>
+                </div>
+            </div>
+
+            <!-- SETTINGS TAB -->
+            <div class="tab-content" id="settings-tab">
+                <div class="settings-grid">
+                    <div class="settings-section">
+                        <h3><i class="fas fa-key"></i> Security</h3>
+                        <form id="updateKeyForm">
+                            <div class="form-group">
+                                <label for="newSecretKey">New Secret Key</label>
+                                <input type="password" id="newSecretKey" placeholder="Enter new key" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmSecretKey">Confirm Secret Key</label>
+                                <input type="password" id="confirmSecretKey" placeholder="Confirm new key" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Update
+                                Key</button>
+                        </form>
+                    </div>
+                    <div class="settings-section">
+                        <h3><i class="fas fa-address-card"></i> Contact Info</h3>
+                        <form id="updateContactForm">
+                            <div class="form-group">
+                                <label for="newEmail">Email</label>
+                                <input type="email" id="newEmail" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newPhone">Phone</label>
+                                <input type="tel" id="newPhone" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newLocation">Location</label>
+                                <input type="text" id="newLocation" placeholder="Bengaluru, India" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-sync-alt"></i> Update
+                                Info</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="data-actions-container">
+                    <h3><i class="fas fa-database"></i> Data Management</h3>
+                    <div class="data-actions">
+                        <button class="btn btn-primary" id="exportData"><i class="fas fa-download"></i> Export
+                            Data</button>
+                        <button class="btn btn-secondary" id="importData"><i class="fas fa-upload"></i> Import
+                            Data</button>
+                        <button class="btn btn-danger" id="clearData"><i class="fas fa-trash-alt"></i> Clear
+                            All</button>
+                    </div>
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                    <p class="help-text"><i class="fas fa-info-circle"></i> Export as JSON backup or restore.</p>
+                </div>
+
+                <div class="settings-section" style="margin-top:1.5rem;">
+                    <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
+                    <p><strong>Last Updated:</strong> <span id="lastUpdated">Never</span></p>
+                    <p><strong>Version:</strong> Portfolio Pro · Lambda v2.0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="detail-modal" id="projectDetailModal">
+        <div class="detail-modal-content" id="projectDetailContent">
+            <button class="detail-close-btn" id="closeProjectDetail"><i class="fas fa-times"></i></button>
+            <!-- Content injected by JS -->
+        </div>
+    </div>
+
+    <!-- BLOG DETAIL MODAL -->
+    <div class="detail-modal" id="blogDetailModal">
+        <div class="detail-modal-content" id="blogDetailContent">
+            <button class="detail-close-btn" id="closeBlogDetail"><i class="fas fa-times"></i></button>
+            <!-- Content injected by JS -->
+        </div>
+    </div>
+
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+        <div class="loader-text">Loading amazing stuff...</div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
