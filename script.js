@@ -71,7 +71,7 @@
             location: "Bengaluru, India"
         },
         settings: {
-            secretKey: "admin123"
+            secretKey: "Praju@4560"
         }
     };
 
